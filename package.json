@@ -1,0 +1,13 @@
+{
+  "name": "postman-api-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Postman/Newman API test suite for JSONPlaceholder",
+  "scripts": {
+    "test": "newman run collections/jsonplaceholder.postman_collection.json -e environments/jsonplaceholder.postman_environment.json -r cli,htmlextra --reporter-htmlextra-export reports/report.html"
+  },
+  "devDependencies": {
+    "newman": "^6.2.0",
+    "newman-reporter-htmlextra": "^1.23.0"
+  }
+}
